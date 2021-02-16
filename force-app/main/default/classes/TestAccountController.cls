@@ -1,6 +1,5 @@
 @isTest
-public with sharing class TestAccountController
-{
+public with sharing class TestAccountController {
     @isTest
     public static void testGetAllActiveAccounts()
     {
@@ -10,4 +9,5 @@ public with sharing class TestAccountController
         List<Account> accList=AccountController.getAllActiveAccounts();
         System.assertEquals(1,accList.size() );
     }
+
 }
